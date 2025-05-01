@@ -1,0 +1,161 @@
+﻿@page "/templates/edit/{id:int}"
+@using Microsoft.AspNetCore.Authorization
+@using WEB.Models
+@attribute [Authorize]
+@inject HttpClient Http
+@inject NavigationManager Navigation
+
+<div class="template-editor">
+    <EditForm Model="@CurrentTemplate" FormName="TemplateForm" OnValidSubmit="@HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <!-- Основные поля шаблона -->
+        <div class="mb-4">
+            <label class="form-label">Название шаблона</label>
+            <InputText @bind-Value="CurrentTemplate.Title" class="form-control" />
+        </div>
+
+        <div class="mb-4">
+            <label class="form-label">Описание</label>
+            <InputTextArea @bind-Value="CurrentTemplate.Description" class="form-control" rows="3" />
+        </div>
+
+        <!-- Список вопросов -->
+        <div class="questions-list">
+            @foreach (var (question, index) in CurrentTemplate.Questions.Select((q, i) => (q, i)))
+            {
+                <div class="question-card card mb-3" @key="question.GetHashCode()">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-2">
+                            <h5>Вопрос @(index + 1)</h5>
+                            <button type="button" class="btn btn-sm btn-danger"
+                                    @onclick="() => RemoveQuestion(index)">
+                                Удалить
+                            </button>
+                        </div>
+
+                        <div class="mb-3">
+                            <InputText @bind-Value="question.Text" 
+                                      class="form-control" 
+                                      placeholder="Текст вопроса" />
+                        </div>
+
+                        <select class="form-select mb-3" @bind="question.Type">
+                            <option value="@QuestionType.Text">Текст</option>
+                            <option value="@QuestionType.Number">Число</option>
+                            <option value="@QuestionType.MultipleChoice">Выбор одного</option>
+                            <option value="@QuestionType.Checkbox">Несколько вариантов</option>
+                        </select>
+
+                        @if (question.Type == QuestionType.MultipleChoice || question.Type == QuestionType.Checkbox)
+                        {
+                            <div class="mb-3">
+                                <label class="form-label">Варианты ответов (каждый с новой строки)</label>
+                                <InputTextArea @bind-Value="OptionsText[index]"
+                                             class="form-control"
+                                             rows="3"
+                                             @oninput="() => UpdateOptions(index)" />
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+
+        <!-- Кнопки управления -->
+        <div class="d-flex gap-2 mt-4">
+            <button type="button" class="btn btn-success" @onclick="AddQuestion">
+                Добавить вопрос
+            </button>
+
+            <button type="submit" class="btn btn-primary">
+                @(IsNew ? "Создать шаблон" : "Сохранить изменения")
+            </button>
+        </div>
+    </EditForm>
+</div>
+
+@code {
+    [Parameter] public int Id { get; set; }
+
+    private Template CurrentTemplate = new();
+    private List<string> OptionsText = new();
+    private bool IsNew => Id == 0;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (!IsNew)
+        {
+            CurrentTemplate = await Http.GetFromJsonAsync<Template>($"/api/templates/{Id}") ?? new();
+            OptionsText = CurrentTemplate.Questions
+                .Select(q => q.Options != null ? string.Join("\n", q.Options) : "")
+                .ToList();
+        }
+        else
+        {
+            CurrentTemplate = new Template { Questions = new List<Question>() };
+            OptionsText = new List<string>();
+        }
+    }
+
+    private void AddQuestion()
+    {
+        CurrentTemplate.Questions.Add(new Question());
+        OptionsText.Add("");
+        StateHasChanged();
+    }
+
+    private void RemoveQuestion(int index)
+    {
+        if (index >= 0 && index < CurrentTemplate.Questions.Count)
+        {
+            CurrentTemplate.Questions.RemoveAt(index);
+            OptionsText.RemoveAt(index);
+            StateHasChanged();
+        }
+    }
+
+    private void UpdateOptions(int index)
+    {
+        if (!string.IsNullOrEmpty(OptionsText[index]))
+        {
+            CurrentTemplate.Questions[index].Options = OptionsText[index]
+                .Split('\n')
+                .Select(o => o.Trim())
+                .Where(o => !string.IsNullOrEmpty(o))
+                .ToList();
+        }
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        try
+        {
+            HttpResponseMessage response;
+
+            if (IsNew)
+            {
+                response = await Http.PostAsJsonAsync("/api/templates", CurrentTemplate);
+            }
+            else
+            {
+                response = await Http.PutAsJsonAsync($"/api/templates/{Id}", CurrentTemplate);
+            }
+
+            if (response.IsSuccessStatusCode)
+            {
+                Navigation.NavigateTo("/templates");
+            }
+            else
+            {
+                var error = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"Ошибка: {error}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Исключение: {ex.Message}");
+        }
+    }
+}

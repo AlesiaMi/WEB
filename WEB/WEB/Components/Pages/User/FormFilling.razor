@@ -1,0 +1,88 @@
+﻿@page "/forms/{templateId}"
+@using WEB.Models
+@inject HttpClient Http
+@inject NavigationManager Navigation
+
+@if (Template == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <h3>@Template.Title</h3>
+    <p>@Template.Description</p>
+
+    <EditForm Model="@Response" OnValidSubmit="SubmitResponse">
+        @foreach (var question in Template.Questions)
+        {
+            <div class="form-group mb-3">
+                <label>@question.Text @(question.IsRequired ? "*" : "")</label>
+
+                @switch (question.Type)
+                {
+                    case QuestionType.Text:
+                        <InputText @bind-Value="GetAnswer(question.Id).Value" class="form-control" />
+                        break;
+                    case QuestionType.Number:
+                        <InputNumber @bind-Value="GetAnswer(question.Id).Value" class="form-control" />
+                        break;
+                    case QuestionType.MultipleChoice:
+                        <select @bind="GetAnswer(question.Id).Value" class="form-control">
+                            @foreach (var option in question.Options)
+                            {
+                                <option value="@option">@option</option>
+                            }
+                        </select>
+                        break;
+                    case QuestionType.Checkbox:
+                        @foreach (var option in question.Options)
+                        {
+                            <div class="form-check">
+                                <input type="checkbox"
+                                       @bind="GetAnswer(question.Id).Value"
+                                       value="@option"
+                                       class="form-check-input" />
+                                <label class="form-check-label">@option</label>
+                            </div>
+                        }
+                        break;
+                    case QuestionType.Date:
+                        <InputDate @bind-Value="GetAnswer(question.Id).Value" class="form-control" />
+                        break;
+                }
+            </div>
+        }
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </EditForm>
+}
+
+@code {
+    [Parameter] public int TemplateId { get; set; }
+
+    private Template Template;
+    private FormResponse Response = new();
+
+    protected override async Task OnParametersSetAsync()
+    {
+        Template = await Http.GetFromJsonAsync<Template>($"/api/templates/{TemplateId}");
+        Response.TemplateId = TemplateId;
+
+        // Initialize answers
+        foreach (var question in Template.Questions)
+        {
+            Response.Answers.Add(new Answer { QuestionId = question.Id });
+        }
+    }
+
+    private Answer GetAnswer(int questionId)
+    {
+        return Response.Answers.FirstOrDefault(a => a.QuestionId == questionId) ?? new Answer();
+    }
+
+    private async Task SubmitResponse()
+    {
+        await Http.PostAsJsonAsync("/api/responses", Response);
+        Navigation.NavigateTo("/thank-you");
+    }
+}

@@ -1,0 +1,306 @@
+﻿@page "/admin/users"
+@attribute [Authorize(Roles = "Admin")]
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.EntityFrameworkCore
+@using WEB.Models
+@using WEB.Data
+@inject UserManager<ApplicationUser> UserManager
+@inject NavigationManager Navigation
+@inject AuthenticationStateProvider AuthStateProvider
+@inject IJSRuntime JSRuntime
+
+<PageTitle>User Management</PageTitle>
+
+<!-- Добавляем стили Font Awesome прямо в компонент -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+<div class="container mt-4">
+    <h2>User Management</h2>
+    <div class="mb-3">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search users..."
+                   @bind="searchTerm" @bind:event="oninput" />
+            <button class="btn btn-outline-secondary" @onclick="async () => await SearchUsers()">
+                <i class="fas fa-search"></i> Search
+            </button>
+        </div>
+    </div>
+
+    @if (isLoading)
+    {
+        <div class="text-center">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    }
+    else if (users == null || !users.Any())
+    {
+        <div class="alert alert-info">No users found</div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Email</th>
+                        <th>Roles</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var user in users)
+                    {
+                        <tr>
+                            <td>@user.Email</td>
+                            <td>
+                                @foreach (var role in user.Roles)
+                                {
+                                    <span class="badge @GetRoleBadgeClass(role) me-1">@role</span>
+                                }
+                            </td>
+                            <td>
+                                <div class="btn-group" role="group">
+                                    <button class="btn btn-sm btn-primary"
+                                            @onclick="() => EditUser(user.Id)">
+                                        <i class="fas fa-edit me-1"></i> Edit
+                                    </button>
+                                    @if (user.Id != currentUserId)
+                                    {
+                                        <button class="btn btn-sm btn-danger ms-2"
+                                                @onclick="() => ShowDeleteModal(user.Id, user.Email)">
+                                            <i class="fas fa-trash-alt me-1"></i> Delete
+                                        </button>
+                                    }
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Пагинация -->
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <div>
+                <span class="text-muted">
+                    Showing @((currentPage - 1) * pageSize + 1)-@Math.Min(currentPage * pageSize, totalUsers) of @totalUsers
+                </span>
+            </div>
+            <div>
+                <nav>
+                    <ul class="pagination pagination-sm">
+                        <li class="page-item @(currentPage == 1 ? "disabled" : "")">
+                            <button class="page-link" @onclick="async () => await ChangePage(-1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                        </li>
+                        @for (var i = 1; i <= totalPages; i++)
+                        {
+                            <li class="page-item @(i == currentPage ? "active" : "")">
+                                <button class="page-link" @onclick="async () => await GoToPage(i)">@i</button>
+                            </li>
+                        }
+                        <li class="page-item @(currentPage == totalPages ? "disabled" : "")">
+                            <button class="page-link" @onclick="async () => await ChangePage(1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    }
+</div>
+
+<!-- Модальное окно на чистом Blazor (без JS) -->
+@if (showDeleteModal)
+{
+    <div class="modal show d-block" tabindex="-1" style="background: rgba(0,0,0,0.5)">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title">Confirm Delete</h5>
+                    <button type="button" class="btn-close btn-close-white" @onclick="CloseDeleteModal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to delete user <strong>@userToDeleteEmail</strong>?</p>
+                    <p class="text-danger">This action cannot be undone!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="CloseDeleteModal">
+                        <i class="fas fa-times me-1"></i> Cancel
+                    </button>
+                    <button type="button" class="btn btn-danger" @onclick="async () => await DeleteUser()">
+                        <i class="fas fa-trash-alt me-1"></i> Delete
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private List<UserViewModel> users = new();
+    private string currentUserId;
+    private bool isLoading = true;
+    private string searchTerm = string.Empty;
+    private int currentPage = 1;
+    private int pageSize = 10;
+    private int totalUsers;
+    private int totalPages;
+    private string userToDeleteId;
+    private string userToDeleteEmail;
+    private bool showDeleteModal = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadCurrentUser();
+        await LoadUsers();
+    }
+
+    private async Task LoadCurrentUser()
+    {
+        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+        currentUserId = (await UserManager.GetUserAsync(user))?.Id;
+    }
+
+    private async Task LoadUsers()
+    {
+        try
+        {
+            isLoading = true;
+            StateHasChanged();
+
+            var query = UserManager.Users.AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(searchTerm))
+            {
+                query = query.Where(u => u.Email.Contains(searchTerm));
+            }
+
+            totalUsers = await query.CountAsync();
+            totalPages = (int)Math.Ceiling(totalUsers / (double)pageSize);
+
+            var userList = await query
+                .OrderBy(u => u.Email)
+                .Skip((currentPage - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            users = new List<UserViewModel>();
+
+            foreach (var user in userList)
+            {
+                users.Add(new UserViewModel
+                    {
+                        Id = user.Id,
+                        Email = user.Email,
+                        Roles = await UserManager.GetRolesAsync(user)
+                    });
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error loading users: {ex.Message}");
+        }
+        finally
+        {
+            isLoading = false;
+            StateHasChanged();
+        }
+    }
+
+    private async Task SearchUsers()
+    {
+        currentPage = 1;
+        await LoadUsers();
+    }
+
+    private async Task ChangePage(int delta)
+    {
+        currentPage = Math.Clamp(currentPage + delta, 1, totalPages);
+        await LoadUsers();
+    }
+
+    private async Task GoToPage(int page)
+    {
+        currentPage = page;
+        await LoadUsers();
+    }
+
+    private void EditUser(string userId)
+    {
+        Navigation.NavigateTo($"/admin/users/edit/{userId}");
+    }
+
+    private void ShowDeleteModal(string userId, string email)
+    {
+        userToDeleteId = userId;
+        userToDeleteEmail = email;
+        showDeleteModal = true;
+        StateHasChanged();
+    }
+
+    private void CloseDeleteModal()
+    {
+        showDeleteModal = false;
+        StateHasChanged();
+    }
+
+    private async Task DeleteUser()
+    {
+        try
+        {
+            if (userToDeleteId == currentUserId)
+            {
+                await JSRuntime.InvokeVoidAsync("alert", "You cannot delete yourself!");
+                return;
+            }
+
+            var user = await UserManager.FindByIdAsync(userToDeleteId);
+            if (user == null) return;
+
+            var result = await UserManager.DeleteAsync(user);
+            if (result.Succeeded)
+            {
+                await LoadUsers();
+            }
+            else
+            {
+                var errors = string.Join("\n", result.Errors.Select(e => e.Description));
+                await JSRuntime.InvokeVoidAsync("alert", $"Error deleting user:\n{errors}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error deleting user: {ex.Message}");
+            await JSRuntime.InvokeVoidAsync("alert", "An error occurred while deleting the user");
+        }
+        finally
+        {
+            showDeleteModal = false;
+            StateHasChanged();
+        }
+    }
+
+    private string GetRoleBadgeClass(string role)
+    {
+        return role switch
+        {
+            "Admin" => "bg-danger",
+            "User" => "bg-primary",
+            _ => "bg-secondary"
+        };
+    }
+
+    public class UserViewModel
+    {
+        public string Id { get; set; }
+        public string Email { get; set; }
+        public IList<string> Roles { get; set; }
+    }
+}

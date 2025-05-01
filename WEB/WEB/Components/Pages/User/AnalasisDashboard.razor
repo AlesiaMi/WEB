@@ -1,0 +1,62 @@
+﻿@page "/templates/{templateId}/analytics"
+@inject HttpClient Http
+@using WEB.Models
+
+@if (Responses == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <h3>Analysis for @Template.Title</h3>
+    
+    @foreach (var question in Template.Questions)
+    {
+        <div class="card mb-4">
+            <div class="card-header">
+                @question.Text
+            </div>
+            <div class="card-body">
+                @if (question.Type == QuestionType.Number)
+                {
+                    <Chart NumberData="@GetNumberAnswers(question.Id)" />
+                }
+                else
+                {
+                    <Chart TextData="@GetTextAnswers(question.Id)" />
+                }
+            </div>
+        </div>
+    }
+}
+
+@code {
+    [Parameter] public int TemplateId { get; set; }
+
+    private Template Template;
+    private List<FormResponse> Responses;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        Template = await Http.GetFromJsonAsync<Template>($"/api/templates/{TemplateId}");
+        Responses = await Http.GetFromJsonAsync<List<FormResponse>>($"/api/responses/template/{TemplateId}");
+    }
+
+    private List<double> GetNumberAnswers(int questionId)
+    {
+        return Responses
+            .SelectMany(r => r.Answers)
+            .Where(a => a.QuestionId == questionId && double.TryParse(a.Value, out _))
+            .Select(a => double.Parse(a.Value))
+            .ToList();
+    }
+
+    private Dictionary<string, int> GetTextAnswers(int questionId)
+    {
+        return Responses
+            .SelectMany(r => r.Answers)
+            .Where(a => a.QuestionId == questionId)
+            .GroupBy(a => a.Value)
+            .ToDictionary(g => g.Key, g => g.Count());
+    }
+}

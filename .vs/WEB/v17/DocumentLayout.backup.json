@@ -1,0 +1,792 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\itransition\\WEB\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\components\\pages\\user\\templateedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\components\\pages\\user\\templateedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\models\\template.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\models\\template.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\models\\option.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\models\\option.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\models\\answer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\models\\answer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\models\\formresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\models\\formresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\components\\pages\\user\\analasisdashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\components\\pages\\user\\analasisdashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\components\\pages\\user\\createtemplate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\components\\pages\\user\\createtemplate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\controllers\\templatecontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\controllers\\templatecontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\components\\pages\\user\\templates.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\components\\pages\\user\\templates.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\services\\templateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\services\\templateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\components\\pages\\user\\formfilling.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\components\\pages\\user\\formfilling.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\services\\questionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\services\\questionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\services\\analyticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\services\\analyticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\services\\formservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\services\\formservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\models\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\models\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\models\\templatetag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\models\\templatetag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\models\\templateaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\models\\templateaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E965FE1-ABB7-46DE-8BA0-FCBBB3968C30}|WEB\\WEB.Client\\WEB.Client.csproj|d:\\itransition\\web\\web\\web.client\\wwwroot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3E965FE1-ABB7-46DE-8BA0-FCBBB3968C30}|WEB\\WEB.Client\\WEB.Client.csproj|solutionrelative:web\\web.client\\wwwroot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E965FE1-ABB7-46DE-8BA0-FCBBB3968C30}|WEB\\WEB.Client\\WEB.Client.csproj|d:\\itransition\\web\\web\\web.client\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3E965FE1-ABB7-46DE-8BA0-FCBBB3968C30}|WEB\\WEB.Client\\WEB.Client.csproj|solutionrelative:web\\web.client\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E965FE1-ABB7-46DE-8BA0-FCBBB3968C30}|WEB\\WEB.Client\\WEB.Client.csproj|d:\\itransition\\web\\web\\web.client\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3E965FE1-ABB7-46DE-8BA0-FCBBB3968C30}|WEB\\WEB.Client\\WEB.Client.csproj|solutionrelative:web\\web.client\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E965FE1-ABB7-46DE-8BA0-FCBBB3968C30}|WEB\\WEB.Client\\WEB.Client.csproj|d:\\itransition\\web\\web\\web.client\\web.client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3E965FE1-ABB7-46DE-8BA0-FCBBB3968C30}|WEB\\WEB.Client\\WEB.Client.csproj|solutionrelative:web\\web.client\\web.client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\components\\pages\\admin\\users.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\components\\pages\\admin\\users.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\components\\pages\\admin\\edituser.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\components\\pages\\admin\\edituser.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\components\\pages\\admin\\edituserroles.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\components\\pages\\admin\\edituserroles.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\components\\account\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\components\\account\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\components\\account\\identityuseraccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\components\\account\\identityuseraccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\models\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\models\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\models\\like.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\models\\like.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\models\\form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\models\\form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\migrations\\20250425213656_addnewtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\migrations\\20250425213656_addnewtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\data\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\data\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\components\\account\\pages\\invalidpasswordreset.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\components\\account\\pages\\invalidpasswordreset.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\components\\account\\pages\\registerconfirmation.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\components\\account\\pages\\registerconfirmation.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|d:\\itransition\\web\\web\\web\\components\\account\\persistingrevalidatingauthenticationstateprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E3AAFE-B942-49A7-8D65-237601FD9CA2}|WEB\\WEB\\WEB.csproj|solutionrelative:web\\web\\components\\account\\persistingrevalidatingauthenticationstateprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Template.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\Template.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Models\\Template.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\Template.cs",
+              "RelativeToolTip": "WEB\\WEB\\Models\\Template.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T19:38:01.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "WEB\\WEB\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAYwEYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T21:36:18.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Question.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\Question.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Models\\Question.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\Question.cs",
+              "RelativeToolTip": "WEB\\WEB\\Models\\Question.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T21:56:37.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Option.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\Option.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Models\\Option.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\Option.cs",
+              "RelativeToolTip": "WEB\\WEB\\Models\\Option.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T21:56:57.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Answer.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\Answer.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Models\\Answer.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\Answer.cs",
+              "RelativeToolTip": "WEB\\WEB\\Models\\Answer.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T21:57:14.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormResponse.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\FormResponse.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Models\\FormResponse.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\FormResponse.cs",
+              "RelativeToolTip": "WEB\\WEB\\Models\\FormResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T00:19:15.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TemplateEdit.razor",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Pages\\User\\TemplateEdit.razor",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Components\\Pages\\User\\TemplateEdit.razor",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Pages\\User\\TemplateEdit.razor",
+              "RelativeToolTip": "WEB\\WEB\\Components\\Pages\\User\\TemplateEdit.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-30T17:28:53.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AnalasisDashboard.razor",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Pages\\User\\AnalasisDashboard.razor",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Components\\Pages\\User\\AnalasisDashboard.razor",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Pages\\User\\AnalasisDashboard.razor",
+              "RelativeToolTip": "WEB\\WEB\\Components\\Pages\\User\\AnalasisDashboard.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-01T00:42:09.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateTemplate.razor",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Pages\\User\\CreateTemplate.razor",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Components\\Pages\\User\\CreateTemplate.razor",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Pages\\User\\CreateTemplate.razor",
+              "RelativeToolTip": "WEB\\WEB\\Components\\Pages\\User\\CreateTemplate.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-30T20:56:25.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TemplateController .cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Controllers\\TemplateController .cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Controllers\\TemplateController .cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Controllers\\TemplateController .cs",
+              "RelativeToolTip": "WEB\\WEB\\Controllers\\TemplateController .cs",
+              "ViewState": "AgIAADMAAAAAmpmZmZn5v0AAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T23:15:21.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Templates.razor",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Pages\\User\\Templates.razor",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Components\\Pages\\User\\Templates.razor",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Pages\\User\\Templates.razor",
+              "RelativeToolTip": "WEB\\WEB\\Components\\Pages\\User\\Templates.razor",
+              "ViewState": "AgIAAB4AAAAwMzMzMzMlwC8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-27T23:59:50.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TemplateService.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Services\\TemplateService.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Services\\TemplateService.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Services\\TemplateService.cs",
+              "RelativeToolTip": "WEB\\WEB\\Services\\TemplateService.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwBIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T12:29:05.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormFilling.razor",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Pages\\User\\FormFilling.razor",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Components\\Pages\\User\\FormFilling.razor",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Pages\\User\\FormFilling.razor",
+              "RelativeToolTip": "WEB\\WEB\\Components\\Pages\\User\\FormFilling.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-01T00:25:22.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "WEB\\WEB\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAADMAAACAZmZmZmYkwEQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-30T00:42:46.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "WEB",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\WEB.csproj",
+              "RelativeDocumentMoniker": "WEB\\WEB\\WEB.csproj",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\WEB.csproj",
+              "RelativeToolTip": "WEB\\WEB\\WEB.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-30T08:30:32.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "QuestionService.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Services\\QuestionService.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Services\\QuestionService.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Services\\QuestionService.cs",
+              "RelativeToolTip": "WEB\\WEB\\Services\\QuestionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T12:29:40.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Program.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Program.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Program.cs",
+              "RelativeToolTip": "WEB\\WEB\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAQAAAAAkwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:23:45.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AnalyticsService.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Services\\AnalyticsService.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Services\\AnalyticsService.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Services\\AnalyticsService.cs",
+              "RelativeToolTip": "WEB\\WEB\\Services\\AnalyticsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T12:29:58.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FormService.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Services\\FormService.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Services\\FormService.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Services\\FormService.cs",
+              "RelativeToolTip": "WEB\\WEB\\Services\\FormService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T12:29:23.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserViewModel.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\UserViewModel.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Models\\UserViewModel.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\UserViewModel.cs",
+              "RelativeToolTip": "WEB\\WEB\\Models\\UserViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T00:29:22.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TemplateTag.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\TemplateTag.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Models\\TemplateTag.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\TemplateTag.cs",
+              "RelativeToolTip": "WEB\\WEB\\Models\\TemplateTag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T19:41:18.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TemplateAccess.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\TemplateAccess.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Models\\TemplateAccess.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\TemplateAccess.cs",
+              "RelativeToolTip": "WEB\\WEB\\Models\\TemplateAccess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T19:39:11.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "EditUser.razor",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Pages\\Admin\\EditUser.razor",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Components\\Pages\\Admin\\EditUser.razor",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Pages\\Admin\\EditUser.razor",
+              "RelativeToolTip": "WEB\\WEB\\Components\\Pages\\Admin\\EditUser.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-30T00:41:35.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "WEB.Client",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB.Client\\WEB.Client.csproj",
+              "RelativeDocumentMoniker": "WEB\\WEB.Client\\WEB.Client.csproj",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB.Client\\WEB.Client.csproj",
+              "RelativeToolTip": "WEB\\WEB.Client\\WEB.Client.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-30T16:36:07.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB.Client\\_Imports.razor",
+              "RelativeDocumentMoniker": "WEB\\WEB.Client\\_Imports.razor",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB.Client\\_Imports.razor",
+              "RelativeToolTip": "WEB\\WEB.Client\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-30T16:36:24.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB.Client\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "WEB\\WEB.Client\\Pages\\Counter.razor",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB.Client\\Pages\\Counter.razor",
+              "RelativeToolTip": "WEB\\WEB.Client\\Pages\\Counter.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-30T16:36:25.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB.Client\\wwwroot\\appsettings.json",
+              "RelativeDocumentMoniker": "WEB\\WEB.Client\\wwwroot\\appsettings.json",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB.Client\\wwwroot\\appsettings.json",
+              "RelativeToolTip": "WEB\\WEB.Client\\wwwroot\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-30T16:36:51.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Users.razor",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Pages\\Admin\\Users.razor",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Components\\Pages\\Admin\\Users.razor",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Pages\\Admin\\Users.razor",
+              "RelativeToolTip": "WEB\\WEB\\Components\\Pages\\Admin\\Users.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-30T00:40:09.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\appsettings.json",
+              "RelativeDocumentMoniker": "WEB\\WEB\\appsettings.json",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\appsettings.json",
+              "RelativeToolTip": "WEB\\WEB\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-24T21:30:37.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "EditUserRoles.razor",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Pages\\Admin\\EditUserRoles.razor",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Components\\Pages\\Admin\\EditUserRoles.razor",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Pages\\Admin\\EditUserRoles.razor",
+              "RelativeToolTip": "WEB\\WEB\\Components\\Pages\\Admin\\EditUserRoles.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-30T01:18:15.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Components\\_Imports.razor",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\_Imports.razor",
+              "RelativeToolTip": "WEB\\WEB\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-30T08:17:03.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\App.razor",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Components\\App.razor",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\App.razor",
+              "RelativeToolTip": "WEB\\WEB\\Components\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-30T10:15:09.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "WEB\\WEB\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T00:28:31.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Register.razor",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Account\\Pages\\Register.razor",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Components\\Account\\Pages\\Register.razor",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Account\\Pages\\Register.razor",
+              "RelativeToolTip": "WEB\\WEB\\Components\\Account\\Pages\\Register.razor",
+              "ViewState": "AgIAAFwAAAAAmpmZmZkBwFIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T10:15:26.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WEB\\WEB\\Properties\\launchSettings.json",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-28T00:51:43.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Tag.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\Tag.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Models\\Tag.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\Tag.cs",
+              "RelativeToolTip": "WEB\\WEB\\Models\\Tag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T19:40:53.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IdentityUserAccessor.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Account\\IdentityUserAccessor.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Components\\Account\\IdentityUserAccessor.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Account\\IdentityUserAccessor.cs",
+              "RelativeToolTip": "WEB\\WEB\\Components\\Account\\IdentityUserAccessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T22:18:10.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Like.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\Like.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Models\\Like.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\Like.cs",
+              "RelativeToolTip": "WEB\\WEB\\Models\\Like.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T19:40:19.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Form.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\Form.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Models\\Form.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\Form.cs",
+              "RelativeToolTip": "WEB\\WEB\\Models\\Form.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T21:56:14.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\Comment.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Models\\Comment.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Models\\Comment.cs",
+              "RelativeToolTip": "WEB\\WEB\\Models\\Comment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T19:39:54.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "WEB\\WEB\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAALoCAAAAQDMzMzMLwAwCAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T17:16:15.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Data\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Data\\ApplicationUser.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Data\\ApplicationUser.cs",
+              "RelativeToolTip": "WEB\\WEB\\Data\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T21:55:15.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "20250425213656_AddNewTable.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Migrations\\20250425213656_AddNewTable.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Migrations\\20250425213656_AddNewTable.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Migrations\\20250425213656_AddNewTable.cs",
+              "RelativeToolTip": "WEB\\WEB\\Migrations\\20250425213656_AddNewTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T21:36:57.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "InvalidPasswordReset.razor",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Account\\Pages\\InvalidPasswordReset.razor",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Components\\Account\\Pages\\InvalidPasswordReset.razor",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Account\\Pages\\InvalidPasswordReset.razor",
+              "RelativeToolTip": "WEB\\WEB\\Components\\Account\\Pages\\InvalidPasswordReset.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T17:28:56.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "RegisterConfirmation.razor",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Account\\Pages\\RegisterConfirmation.razor",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Components\\Account\\Pages\\RegisterConfirmation.razor",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Account\\Pages\\RegisterConfirmation.razor",
+              "RelativeToolTip": "WEB\\WEB\\Components\\Account\\Pages\\RegisterConfirmation.razor",
+              "ViewState": "AgIAACoAAAAAAAAAAABAvQAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T17:28:04.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "PersistingRevalidatingAuthenticationStateProvider.cs",
+              "DocumentMoniker": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Account\\PersistingRevalidatingAuthenticationStateProvider.cs",
+              "RelativeDocumentMoniker": "WEB\\WEB\\Components\\Account\\PersistingRevalidatingAuthenticationStateProvider.cs",
+              "ToolTip": "D:\\itransition\\WEB\\WEB\\WEB\\Components\\Account\\PersistingRevalidatingAuthenticationStateProvider.cs",
+              "RelativeToolTip": "WEB\\WEB\\Components\\Account\\PersistingRevalidatingAuthenticationStateProvider.cs",
+              "ViewState": "AgIAAFEAAAAAoJmZmZnpvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T17:26:24.369Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

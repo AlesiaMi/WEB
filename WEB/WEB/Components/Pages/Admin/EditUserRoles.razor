@@ -1,0 +1,110 @@
+﻿@page "/admin/users/edit/{UserId}"
+@attribute [Authorize(Roles = "Admin")]
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Identity
+@using WEB.Data
+@inject UserManager<ApplicationUser> UserManager
+@inject NavigationManager Navigation
+@inject ILogger<EditUserRoles> Logger
+
+<h3>Edit User Roles</h3>
+
+@if (user == null)
+{
+    <p>Loading user data...</p>
+}
+else
+{
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">@user.Email</h5>
+
+            <EditForm Model="model" OnValidSubmit="HandleValidSubmit">
+                <div class="mb-3">
+                    @foreach (var role in allRoles)
+                    {
+                        <div class="form-check">
+                            <InputCheckbox @bind-Value="model.SelectedRoles[role]"
+                                           class="form-check-input" />
+                            <label class="form-check-label">@role</label>
+                        </div>
+                    }
+                </div>
+
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+                <button type="button" class="btn btn-secondary" @onclick="Cancel">Cancel</button>
+            </EditForm>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public string UserId { get; set; }
+
+    private ApplicationUser user;
+    private List<string> allRoles = new() { "Admin", "User" };
+    private EditUserRolesModel model = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        user = await UserManager.FindByIdAsync(UserId);
+        if (user == null)
+        {
+            Navigation.NavigateTo("/admin/users");
+            return;
+        }
+
+        var currentRoles = await UserManager.GetRolesAsync(user);
+        model = new EditUserRolesModel
+            {
+                SelectedRoles = allRoles.ToDictionary(r => r, r => currentRoles.Contains(r))
+            };
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        try
+        {
+            // Get roles to add and remove
+            var rolesToAdd = model.SelectedRoles
+                .Where(r => r.Value)
+                .Select(r => r.Key)
+                .ToList();
+
+            var rolesToRemove = model.SelectedRoles
+                .Where(r => !r.Value)
+                .Select(r => r.Key)
+                .ToList();
+
+           
+
+            // Update roles
+            if (rolesToRemove.Any())
+            {
+                await UserManager.RemoveFromRolesAsync(user, rolesToRemove);
+            }
+
+            if (rolesToAdd.Any())
+            {
+                await UserManager.AddToRolesAsync(user, rolesToAdd);
+            }
+
+            Navigation.NavigateTo("/admin/users");
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Error updating user roles");
+        }
+    }
+
+    private void Cancel()
+    {
+        Navigation.NavigateTo("/admin/users");
+    }
+
+    public class EditUserRolesModel
+    {
+        public Dictionary<string, bool> SelectedRoles { get; set; } = new();
+    }
+}

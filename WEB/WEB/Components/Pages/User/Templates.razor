@@ -1,0 +1,118 @@
+﻿@page "/templates"
+@using Microsoft.AspNetCore.Authorization
+@using WEB.Models 
+@using WEB.Services
+@attribute [Authorize(Roles = "User")]
+@inject HttpClient Http
+@inject TemplateService TemplateService
+@inject NavigationManager Navigation
+@inject IHttpClientFactory HttpClientFactory
+
+
+<h3>Мои шаблоны форм</h3>
+
+<NavLink href="/templates/new"> <button class="btn btn-primary mb-3"> + New form </button> </NavLink>
+@if (isLoading)
+{
+    <div class="text-center">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+}
+
+else if (!templates.Any())
+{
+    <div class="alert alert-info">У вас пока нет шаблонов</div>
+}
+else
+{
+    <div class="row">
+        @foreach (var template in templates)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">@template.Title</h5>
+                        <p class="card-text">@template.Description</p>
+                        <div class="d-flex justify-content-between">
+                            <button @onclick="() => EditTemplate(template.Id)"
+                                    class="btn btn-sm btn-outline-primary">
+                                Редактировать
+                            </button>
+                            <button @onclick="() => DeleteTemplate(template.Id)"
+                                    class="btn btn-sm btn-outline-danger">
+                                Удалить
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    
+
+    private List<Template> templates = new();
+    private bool isLoading = true;
+    private string? errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadTemplates();
+    }
+
+    private async Task LoadTemplates()
+    {
+        try
+        {
+            isLoading = true;
+            var response = await Http.GetAsync("api/template/all");
+
+            if (response.IsSuccessStatusCode)
+            {
+                templates = await response.Content.ReadFromJsonAsync<List<Template>>();
+            }
+            else
+            {
+                errorMessage = "Ошибка при загрузке шаблонов";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Произошла ошибка: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void EditTemplate(int id)
+    {
+        Navigation.NavigateTo($"/templates/edit/{id}");
+    }
+
+    private async Task DeleteTemplate(int id)
+    {
+        try
+        {
+            var response = await Http.DeleteAsync($"api/template/delete/{id}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                await LoadTemplates();
+            }
+            else
+            {
+                errorMessage = "Не удалось удалить шаблон";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Ошибка при удалении: {ex.Message}";
+        }
+    }
+}

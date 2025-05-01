@@ -1,0 +1,68 @@
+﻿@page "/templates/new"
+@using WEB.Models
+@inject IHttpClientFactory HttpClientFactory
+@inject NavigationManager Navigation
+@inject HttpClient Http
+
+<EditForm Model="@NewTemplate" OnValidSubmit="SaveTemplate">
+    <div class="form-group">
+        <label>Title</label>
+        <InputText @bind-Value="NewTemplate.Title" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Description</label>
+        <InputTextArea @bind-Value="NewTemplate.Description" class="form-control" />
+    </div>
+
+    <h3>Questions</h3>
+    @foreach (var question in NewTemplate.Questions)
+    {
+        <div class="card mb-3">
+            <div class="card-body">
+                <div class="form-group">
+                    <InputText @bind-Value="question.Text" placeholder="Question text" />
+                </div>
+                <select @bind="question.Type" class="form-control">
+                    @foreach (var type in Enum.GetValues<QuestionType>())
+                    {
+                        <option value="@type">@type</option>
+                    }
+                </select>
+
+                @if (question.Type == QuestionType.MultipleChoice || question.Type == QuestionType.Checkbox)
+                {
+                    <div class="mt-2">
+                        <label>Options (comma separated)</label>
+                        <InputText @bind-Value="OptionsString"
+                                   @onchange="() => UpdateOptions(question)" />
+                    </div>
+                }
+            </div>
+        </div>
+    }
+
+    <button type="button" @onclick="AddQuestion" class="btn btn-secondary">Add Question</button>
+    <button type="submit" class="btn btn-primary">Save Template</button>
+</EditForm>
+
+@code {
+    private Template NewTemplate = new();
+    private string OptionsString = "";
+
+    private void AddQuestion()
+    {
+        NewTemplate.Questions.Add(new Question());
+    }
+
+    private void UpdateOptions(Question question)
+    {
+        question.Options = OptionsString.Split(',').Select(x => x.Trim()).ToList();
+    }
+
+    private async Task SaveTemplate()
+    {
+        await Http.PostAsJsonAsync("/api/templates", NewTemplate);
+        Navigation.NavigateTo("/templates");
+    }
+}

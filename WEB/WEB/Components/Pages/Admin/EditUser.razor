@@ -1,0 +1,67 @@
+﻿@page "/admin/edit-user/{userId}"
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Identity
+@using WEB.Data
+@attribute [Authorize(Roles = "Admin")]
+@inject UserManager<ApplicationUser> UserManager
+@inject NavigationManager Navigation
+
+<h3>Редактирование пользователя: @currentUser?.Email</h3>
+
+<EditForm Model="editModel" OnValidSubmit="SaveChanges">
+    <div class="mb-3">
+        @foreach (var role in allRoles)
+        {
+            <div class="form-check">
+                <input type="checkbox"
+                       @bind="editModel.SelectedRoles[role]"
+                       class="form-check-input" />
+                <label class="form-check-label">@role</label>
+            </div>
+        }
+    </div>
+
+    <button type="submit" class="btn btn-primary">Сохранить</button>
+    <button @onclick="Cancel" class="btn btn-secondary">Отмена</button>
+</EditForm>
+
+@code {
+    [Parameter]
+    public string UserId { get; set; }
+
+    private ApplicationUser currentUser;
+    private List<string> allRoles = new() { "Admin", "User" };
+    private EditUserModel editModel = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        currentUser = await UserManager.FindByIdAsync(UserId);
+        var currentRoles = await UserManager.GetRolesAsync(currentUser);
+
+        editModel = new EditUserModel
+            {
+                SelectedRoles = allRoles.ToDictionary(r => r, r => currentRoles.Contains(r))
+            };
+    }
+
+    private async Task SaveChanges()
+    {
+        var rolesToAdd = editModel.SelectedRoles.Where(r => r.Value).Select(r => r.Key);
+        var currentRoles = await UserManager.GetRolesAsync(currentUser);
+
+        await UserManager.RemoveFromRolesAsync(currentUser, currentRoles);
+        await UserManager.AddToRolesAsync(currentUser, rolesToAdd);
+
+        Navigation.NavigateTo("/admin/users");
+    }
+
+    private void Cancel()
+    {
+        Navigation.NavigateTo("/admin/users");
+    }
+
+    public class EditUserModel
+    {
+        public Dictionary<string, bool> SelectedRoles { get; set; }
+    }
+}
