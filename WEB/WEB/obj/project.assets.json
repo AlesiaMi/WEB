@@ -5797,11 +5797,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\itransition\\WEB\\WEB\\WEB\\WEB.csproj",
+      "projectUniqueName": "D:\\itransition\\Forms(git)\\WEB\\WEB\\WEB\\WEB.csproj",
       "projectName": "WEB",
-      "projectPath": "D:\\itransition\\WEB\\WEB\\WEB\\WEB.csproj",
+      "projectPath": "D:\\itransition\\Forms(git)\\WEB\\WEB\\WEB\\WEB.csproj",
       "packagesPath": "C:\\Users\\Alesia\\.nuget\\packages\\",
-      "outputPath": "D:\\itransition\\WEB\\WEB\\WEB\\obj\\",
+      "outputPath": "D:\\itransition\\Forms(git)\\WEB\\WEB\\WEB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5816,14 +5816,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\itransition\\WEB\\WEB\\WEB.Client\\WEB.Client.csproj": {
-              "projectPath": "D:\\itransition\\WEB\\WEB\\WEB.Client\\WEB.Client.csproj"
+            "D:\\itransition\\Forms(git)\\WEB\\WEB\\WEB.Client\\WEB.Client.csproj": {
+              "projectPath": "D:\\itransition\\Forms(git)\\WEB\\WEB\\WEB.Client\\WEB.Client.csproj"
             }
           }
         }
