@@ -43,3 +43,9 @@ D:\itransition\WEB\WEB\WEB.Client\obj\Debug\net8.0\staticwebassets.build.json
 D:\itransition\WEB\WEB\WEB.Client\obj\Debug\net8.0\staticwebassets.build.json
 D:\itransition\WEB\WEB\WEB.Client\obj\Debug\net8.0\staticwebassets.build.json
 D:\itransition\WEB\WEB\WEB.Client\obj\Debug\net8.0\staticwebassets.build.json
+D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\staticwebassets.build.json
+D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\staticwebassets.build.json
+D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\staticwebassets.build.json
+D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\staticwebassets.build.json
+D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\staticwebassets.build.json
+D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\staticwebassets.build.json

@@ -12,7 +12,7 @@ namespace WEB
 {
     public class Program
     {
-        public static async Task Main(string[] args)  // Изменили на async Task
+        public static async Task Main(string[] args)  
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -26,8 +26,14 @@ namespace WEB
                 {
                     policy.WithOrigins("https://localhost:7257", "http://localhost:5171")
                           .AllowAnyMethod()
-                          .AllowAnyHeader();
+                          .AllowAnyHeader()
+                          .AllowCredentials();
                 });
+            });
+            builder.Services.ConfigureApplicationCookie(options =>
+            {
+                options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+                options.Cookie.SameSite = SameSiteMode.Lax;
             });
 
             // Настройка Razor компонентов и Blazor
@@ -71,8 +77,7 @@ namespace WEB
 
             var app = builder.Build();
 
-            // Настройка middleware
-            app.UseCors("AllowAllOrigins");
+            
 
             if (app.Environment.IsDevelopment())
             {
@@ -87,6 +92,8 @@ namespace WEB
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            // Настройка middleware
+            app.UseCors("AllowAllOrigins");
             app.UseAntiforgery();
 
             // Настройка маршрутов

@@ -1787,11 +1787,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\itransition\\Forms(git)\\WEB\\WEB\\WEB.Client\\WEB.Client.csproj",
+      "projectUniqueName": "D:\\itransition\\Course.git\\WEB\\WEB.Client\\WEB.Client.csproj",
       "projectName": "WEB.Client",
-      "projectPath": "D:\\itransition\\Forms(git)\\WEB\\WEB\\WEB.Client\\WEB.Client.csproj",
+      "projectPath": "D:\\itransition\\Course.git\\WEB\\WEB.Client\\WEB.Client.csproj",
       "packagesPath": "C:\\Users\\Alesia\\.nuget\\packages\\",
-      "outputPath": "D:\\itransition\\Forms(git)\\WEB\\WEB\\WEB.Client\\obj\\",
+      "outputPath": "D:\\itransition\\Course.git\\WEB\\WEB.Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1863,6 +1863,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+            "version": "[8.0.15, 8.0.15]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
