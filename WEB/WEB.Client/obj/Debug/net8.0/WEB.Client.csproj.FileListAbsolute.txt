@@ -2073,9 +2073,6 @@ D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\compressed\luwzf141q1-
 D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\compressed\dbp6hw6t4v-tptq2av103.gz
 D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\compressed\e94eq2uipa-lfu7j35m59.gz
 D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\compressed\yie6z3sd3l-oyz0vx2fzb.gz
-D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\compressed\bnuah15a68-k1p9nqq10v.gz
-D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\compressed\9mne2ykf62-2rldasx91b.gz
-D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\compressed\sccyyrndum-vstk3s3r5s.gz
 D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\staticwebassets.build.json
 D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\staticwebassets.development.json
 D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\staticwebassets.build.endpoints.json
@@ -2091,3 +2088,6 @@ D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\WEB.Client.dll
 D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\refint\WEB.Client.dll
 D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\WEB.Client.pdb
 D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\ref\WEB.Client.dll
+D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\compressed\bnuah15a68-r47d6phhi6.gz
+D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\compressed\9mne2ykf62-b8joork1ck.gz
+D:\itransition\Course.git\WEB\WEB.Client\obj\Debug\net8.0\compressed\sccyyrndum-3hnhahff19.gz

@@ -7,7 +7,13 @@
 @inject NavigationManager Navigation
 
 <h3>Редактирование пользователя: @currentUser?.Email</h3>
-
+@if (currentUser == null)
+{
+    <div class="alert alert-danger">Loading user data or user not found...</div>
+}
+else
+{
+    <h3>Edit user: @currentUser.Email</h3>
 <EditForm Model="editModel" OnValidSubmit="SaveChanges">
     <div class="mb-3">
         @foreach (var role in allRoles)
@@ -24,7 +30,7 @@
     <button type="submit" class="btn btn-primary">Сохранить</button>
     <button @onclick="Cancel" class="btn btn-secondary">Отмена</button>
 </EditForm>
-
+}
 @code {
     [Parameter]
     public string UserId { get; set; }
@@ -54,7 +60,7 @@
 
         Navigation.NavigateTo("/admin/users");
     }
-
+     
     private void Cancel()
     {
         Navigation.NavigateTo("/admin/users");

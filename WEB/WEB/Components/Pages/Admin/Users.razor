@@ -12,7 +12,6 @@
 
 <PageTitle>User Management</PageTitle>
 
-<!-- Добавляем стили Font Awesome прямо в компонент -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
 <div class="container mt-4">
@@ -63,10 +62,10 @@
                             </td>
                             <td>
                                 <div class="btn-group" role="group">
-                                    <button class="btn btn-sm btn-primary"
-                                            @onclick="() => EditUser(user.Id)">
-                                        <i class="fas fa-edit me-1"></i> Edit
-                                    </button>
+                                    
+                                    <a href="/admin/edit-user/@user.Id" class="btn btn-primary">
+                                        Редактировать
+                                    </a>
                                     @if (user.Id != currentUserId)
                                     {
                                         <button class="btn btn-sm btn-danger ms-2"
@@ -115,7 +114,6 @@
     }
 </div>
 
-<!-- Модальное окно на чистом Blazor (без JS) -->
 @if (showDeleteModal)
 {
     <div class="modal show d-block" tabindex="-1" style="background: rgba(0,0,0,0.5)">
@@ -234,7 +232,7 @@
 
     private void EditUser(string userId)
     {
-        Navigation.NavigateTo($"/admin/users/edit/{userId}");
+        Navigation.NavigateTo($"/admin/edit-user/{userId}");
     }
 
     private void ShowDeleteModal(string userId, string email)
